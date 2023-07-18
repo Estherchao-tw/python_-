@@ -1,5 +1,6 @@
 from tkinter import *
-import tkinter  as tk 
+import tkinter  as tk
+from PIL import Image,ImageTk
 
 down = tk.Tk()
 down.title('GUI')
@@ -24,7 +25,7 @@ def display1():
 var0 = tk.IntVar()
 var1 = tk.IntVar()
 var2 = tk.IntVar()
-
+radioVar = tk.IntVar()
 
 
 
@@ -50,4 +51,35 @@ test1 = tk.Checkbutton(down,text="it's a bad day",state="disabled",variable=var0
 test1.pack()
 test2 = tk.Checkbutton(down,text="it's a awful day",state="normal",variable= var2,onvalue=1, offvalue=0, command=display1)
 test2.pack()
+
+# 圓形按鈕radiobutton
+radio0 = tk.Radiobutton(text='餐點A',variable=radioVar,value=0)
+radio1 = tk.Radiobutton(text='餐點B',variable=radioVar,value=1)
+radio2 = tk.Radiobutton(text='餐點C',variable=radioVar,value=2)
+
+radio0.pack()
+radio1.pack()
+radio2.pack()
+
+# labal 標籤，一個空盒子，可以放文字照片等
+var = StringVar()
+label = tk.Label(textvariable=var,relief=RAISED)
+
+var.set("how have you been?")
+label.pack()
+
+img = Image.open('./images/tree/favicon.ico')
+tkimg = ImageTk.PhotoImage(img)
+image0 = tk.Label(down,image=tkimg)
+image0.pack()
+
+
+#Canvas
+img1 = Image.open('./images/ball/6.jpg')
+tk_img = ImageTk.PhotoImage(img1)
+
+canvas = tk.Canvas(down,width=200)
+canvas.create_image(0,0, anchor="center" ,image=tk_img)
+canvas.pack()
+
 down.mainloop()
