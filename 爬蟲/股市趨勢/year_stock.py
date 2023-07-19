@@ -31,8 +31,8 @@ for m in range(1,13):
     year_df.to_csv("./year_stock0.csv",encoding="utf-8-sig")
     p = pd.read_csv('./year_stock0.csv')  
 # 轉成xlsx檔
-    # year_df.to_excel("./year_stock.xlsx")
+    year_df.to_excel("./year_stock.xlsx")
 # 轉成html檔
-# # df.to_html("./month_stock.html")
-    print(p)
+    year_df.to_html("./year_stock.html")
+    # print(p)
 
