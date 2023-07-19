@@ -16,5 +16,6 @@ print(soup.prettify())
 AJAX 爬蟲
 kkbox give us an empty shell of html framework,and they fill data by js.
 
+#要找到傳遞資料的api
 daily?category=.... >preview 
 裡面有我們要抓的資料(歌手、歌名、日期等等)

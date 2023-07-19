@@ -6,7 +6,7 @@ import csv
 url = "https://kma.kkbox.com/charts/api/v1/daily?category=390&date=2023-07-18&lang=tc&limit=50&terr=tw&type=newrelease"
 response = requests.get(url)
 
-data = json.loads(response.text)
+data = json.loads(response.text) ##JSON 轉 python
 # print(data)
 
 songlist = data['data']['charts']['newrelease']
