@@ -1,4 +1,4 @@
-# python_-
+# ABOUT ME 
 - 👋 Hi, I’m Esther @Estherchao-tw
 - 👀 I’m interested in python and mysql system, though I'm a beginner in IT... 
 - 🌱 I currently build a python portfolio, and you can check it on my respositories name python
