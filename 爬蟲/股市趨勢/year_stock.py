@@ -1,6 +1,9 @@
 import requests
 import json
 import pandas as pd
+import os
+
+data =[]
 
 for m in range(1,13):
     
@@ -13,26 +16,34 @@ for m in range(1,13):
 
 
     js_data = json.loads(response.text)
-    data0 = js_data["data"]
+    # print(js_data)
+    stock = js_data["data"]
     fields0 = js_data["fields"]
-    # print(type(data0))
-    
+    # detail = stock[日期][項目]
+    N = len(stock)
+    for i in range(0,N-1):
+        date = stock[i][0]
+        trading_volume = stock[i][1] #成交股數 Trading Volume 
+        transaction= stock[i][2]
+        opening_price= stock[i][3]
+        highest_price= stock[i][4]
+        lowest_price= stock[i][5]
+        closing_price= stock[i][6]
+        change= stock[i][7]
+        NT= stock[i][8] #成交筆數 (Number of Transactions)
+        data.append([date,trading_volume,transaction,opening_price,highest_price,lowest_price,closing_price,change,NT])
 
-
+   
+    # print(type(stock))
+print(type(data),type(fields0))
+print(data)
 # # 將資料轉成dataframe export to csv
-# # use Pandas
-    mon_df = pd.DataFrame(data0,columns=fields0)
-#將每個月的DataFrame合併成一個整年的DataFrame。ignore_index=True讓合併後資料的index是連續的。
-    year_df = pd.concat([mon_df],ignore_index=True)
-    # print(type(year_df))
-    # print(year_df)
-
+# # # use Pandas
+year_df = pd.DataFrame(data,columns=fields0)
+print("2022 stock df")
 # 轉成csv檔
-    year_df.to_csv("./year_stock0.csv",encoding="utf-8-sig")
-    p = pd.read_csv('./year_stock0.csv')  
-# 轉成xlsx檔
-    year_df.to_excel("./year_stock.xlsx")
-# 轉成html檔
-    year_df.to_html("./year_stock.html")
-    # print(p)
+os.makedirs('./2022',exist_ok=True)
+year_df.to_csv("./2022/2022_year_stock.csv",encoding="utf-8-sig")
+p = pd.read_csv('./2022/2022_year_stock.csv')  
+print(p)
 

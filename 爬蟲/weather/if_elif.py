@@ -6,7 +6,7 @@ if a<b:
         print('a=1')  # 不會印出
     elif a==2:
         print('a=2')  # a=2
-    else a==2:
+    else a==3:
         print('a=3')  # 不會印出
 elif a>b:
     print('a>b')      # 不會印出

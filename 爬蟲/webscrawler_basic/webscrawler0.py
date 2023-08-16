@@ -7,7 +7,7 @@ response = requests.get(
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
     })
 
-#print(response.headers)
+# print(response.text)
 
 soup = BeautifulSoup(response.text, "html.parser")
 data = soup.select("h3.qa-list__title a")
