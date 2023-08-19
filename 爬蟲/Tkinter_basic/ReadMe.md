@@ -16,9 +16,6 @@ GUI 基本知識可以往這邊簡單看一下操作: [PyAutoGUI](爬蟲/GUI/PyA
 
 使用 Tkinter 中的 Label 小部件和時間模塊： 在下面的應用程序中，我們將使用標籤小部件，並且還將使用時間模塊，我們將用它來檢索系統時間。 下面是實現：
 
-```
-![demo](爬蟲/Tkinter_basic/demo.mp4)
-```
 
 Method:
 
