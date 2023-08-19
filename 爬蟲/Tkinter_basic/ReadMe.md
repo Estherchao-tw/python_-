@@ -14,16 +14,18 @@ GUI 基本知識可以往這邊簡單看一下操作: [PyAutoGUI](爬蟲/GUI/PyA
 >
 > 時間模塊(time module)
 
+
+
+
 使用 Tkinter 中的 Label 小部件和時間模塊： 在下面的應用程序中，我們將使用標籤小部件，並且還將使用時間模塊，我們將用它來檢索系統時間。 下面是實現：
 
+https://github.com/Estherchao-tw/python_-/assets/74496288/c0801741-752d-49ef-8537-1084a1a8a1c2
 
-Method:
+<h3>Method:</h3>
 
 1. 定義產生不同時區時間的函式
-
-   - dt.timedelta(時間差):取得我們的時區(+8)。
-
-   - specify the tz argument to a valid time zone object
+   1. dt.timedelta(時間差):取得我們的時區(+8)。
+   2. specify the tz argument to a valid time zone object
 
 2. 創建視窗
 3. 在視窗中創建字串string 
