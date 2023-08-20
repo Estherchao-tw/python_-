@@ -16,15 +16,15 @@ import matplotlib.cbook as cbook<br>
 
 We have downloaded the daily stock prices data using the TWSE API functionality. It’s an year data capturing Open, High, Low, Close, and Volume
 
-[開盤價]Open: The price of the stock when the market opens in the morning
-[收盤價]Close: The price of the stock when the market closed in the evening
-[最高點]High: Highest price the stock reached during that day
-[最低點]Low: Lowest price the stock is traded on that day
-[成交股數]Volume: The total amount of stocks traded on that day
-[成交數量]Number of transaction
-
+[開盤價]Open: The price of the stock when the market opens in the morning<br>
+[收盤價]Close: The price of the stock when the market closed in the evening<br>
+[最高點]High: Highest price the stock reached during that day<br>
+[最低點]Low: Lowest price the stock is traded on that day<br>
+[成交股數]Volume: The total amount of stocks traded on that day<br>
+[成交數量]Number of transaction<br>
+<br>
 Here, we will take the Example of stock 0056 which are the ETF leaders in providing IT services.
-
+<br>
 ### stock prices of 0056| stock price analysis python
 
 This graph is clearly shows that the highest price of 0056 is more when comparing it to other two index but I'm not interested in the absolute prices for these index but wanted to understand how these stock fluctuate with time
