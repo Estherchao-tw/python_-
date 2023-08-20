@@ -6,32 +6,33 @@ Let's dive into the stock price analysis with Python
 
 **installation** 
 
-import numpy as np
-import pandas as pd
-import matplotlib.dates as mdates    #處理日期
-import matplotlib.pyplot as plt
-import matplotlib.cbook as cbook
-
-from pandas.plotting import scatter_matrix
+import numpy as np <br>
+import pandas as pd <br>
+import matplotlib.dates as mdates    #處理日期<br>
+import matplotlib.pyplot as plt<br>
+import matplotlib.cbook as cbook<br>
 
 **Data Description**
 
 We have downloaded the daily stock prices data using the TWSE API functionality. It’s an year data capturing Open, High, Low, Close, and Volume
 
-[開盤價]Open: The price of the stock when the market opens in the morning
-[收盤價]Close: The price of the stock when the market closed in the evening
-[最高點]High: Highest price the stock reached during that day
-[最低點]Low: Lowest price the stock is traded on that day
-[成交股數]Volume: The total amount of stocks traded on that day
-[成交數量]Number of transaction
-
+[開盤價]Open: The price of the stock when the market opens in the morning<br>
+[收盤價]Close: The price of the stock when the market closed in the evening<br>
+[最高點]High: Highest price the stock reached during that day<br>
+[最低點]Low: Lowest price the stock is traded on that day<br>
+[成交股數]Volume: The total amount of stocks traded on that day<br>
+[成交數量]Number of transaction<br>
+<br>
 Here, we will take the Example of stock 0056 which are the ETF leaders in providing IT services.
-
+<br>
 ### stock prices of 0056| stock price analysis python
 
 This graph is clearly shows that the highest price of 0056 is more when comparing it to other two index but I'm not interested in the absolute prices for these index but wanted to understand how these stock fluctuate with time
 
-<img src="D:\coding\python\爬蟲\股市趨勢\5_matplotlib_chat.png" alt="5_matplotlib_chat" style="zoom:63%;" />
+![2022-0056_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/9d04ead5-12ab-4c10-8459-ee3acbcf5f70)
+
+![May-0056_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/58eec5c0-c2d7-4e58-9636-840ae44ccd6e)
+
 
 ### Python code explation
 
