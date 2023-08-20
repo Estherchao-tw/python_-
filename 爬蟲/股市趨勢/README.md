@@ -1,4 +1,4 @@
-![5_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/7c228ddb-f82c-43bc-8c52-f0b50cd12f40)# Stock price analysis with Python
+# Stock price analysis with Python
 
 It's crucial for investors to understand the risk of investing in the stock market. A company's stock price reflect its evaluation and performance, which influences the demand and supply in the market. Technical analysis of the stock is a vast field ,and  I will provide an overview of it in this REAME.me 
 
@@ -6,13 +6,11 @@ Let's dive into the stock price analysis with Python
 
 **installation** 
 
-import numpy as np
-import pandas as pd
-import matplotlib.dates as mdates    #處理日期
-import matplotlib.pyplot as plt
-import matplotlib.cbook as cbook
-
-from pandas.plotting import scatter_matrix
+import numpy as np <br>
+import pandas as pd <br>
+import matplotlib.dates as mdates    #處理日期<br>
+import matplotlib.pyplot as plt<br>
+import matplotlib.cbook as cbook<br>
 
 **Data Description**
 
