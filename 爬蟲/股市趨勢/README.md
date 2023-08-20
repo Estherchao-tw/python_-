@@ -1,4 +1,4 @@
-# Stock price analysis with Python
+![5_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/7c228ddb-f82c-43bc-8c52-f0b50cd12f40)# Stock price analysis with Python
 
 It's crucial for investors to understand the risk of investing in the stock market. A company's stock price reflect its evaluation and performance, which influences the demand and supply in the market. Technical analysis of the stock is a vast field ,and  I will provide an overview of it in this REAME.me 
 
@@ -31,7 +31,10 @@ Here, we will take the Example of stock 0056 which are the ETF leaders in provid
 
 This graph is clearly shows that the highest price of 0056 is more when comparing it to other two index but I'm not interested in the absolute prices for these index but wanted to understand how these stock fluctuate with time
 
-<img src="D:\coding\python\爬蟲\股市趨勢\5_matplotlib_chat.png" alt="5_matplotlib_chat" style="zoom:63%;" />
+![2022-0056_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/9d04ead5-12ab-4c10-8459-ee3acbcf5f70)
+
+![May-0056_matplotlib_chat](https://github.com/Estherchao-tw/python_-/assets/74496288/58eec5c0-c2d7-4e58-9636-840ae44ccd6e)
+
 
 ### Python code explation
 
