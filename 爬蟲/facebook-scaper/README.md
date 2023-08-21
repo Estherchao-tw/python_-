@@ -43,6 +43,7 @@ beautifulsoup 4.12.2
   - 元素內文字 getText()
 
 -----
+### selenium
 
 #### 開啟瀏覽器:webdriver.chrome()
 
@@ -84,7 +85,7 @@ driver.get('https://www.facebook.com/login')
 
 就可以透過get()方法，前往要爬取的facebook 的網址。
 
-## 定位元素 By
+#### 定位元素 By
 
 find_element_by_name 已經除去了，更新後selenium4.6需要新增
 
@@ -107,7 +108,7 @@ password = driver.find_element(By.NAME,"pass")
 
 **搜尋**:需要的是那個輸入框的位置，可 以找到class
 
-<img src="C:\Users\xperi\AppData\Roaming\Typora\typora-user-images\image-20230821174950380.png" alt="image-20230821174950380" style="zoom:50%;" />
+![image-20230821174950380](https://github.com/Estherchao-tw/python_-/assets/74496288/3961e8b5-e326-40cf-9992-e11635bf1fe7)
 
 #### 鍵盤操作 send_keys()
 
@@ -165,8 +166,9 @@ driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
 依照要項下滑的次數去更改 range 的範圍。
 
 接下來要進入爬蟲~~
+### BeautifulSoup
 
-#### Beautiful 解析網站
+#### BeautifulSoup 解析網站
 
 網頁的HTML程式碼是從webdriver 來的，我們要使用diver.page_source 得到整篇程式碼。
 
@@ -184,8 +186,8 @@ soup = BeautifulSoup(driver.page_source,'html.parser')
 titles = soup.find_all('div',{'class':"xdj266r x11i5rnm xat24cr x1mh8g0r x1vvkbs x126k92a"})
 
 ```
+![image-20230821181951904](https://github.com/Estherchao-tw/python_-/assets/74496288/ef2c9ef0-604d-46cd-84da-a0cb743ca249)
 
-<img src="C:\Users\xperi\AppData\Roaming\Typora\typora-user-images\image-20230821181951904.png" alt="image-20230821181951904" style="zoom:50%;" />
 
 #### 元素內文字 getText()
 
@@ -198,7 +200,7 @@ print(post)
 
 output:
 
-![image-20230821182137957](C:\Users\xperi\AppData\Roaming\Typora\typora-user-images\image-20230821182137957.png)
+![image-20230821182137957](https://github.com/Estherchao-tw/python_-/assets/74496288/f3cad920-524c-49f6-81b7-a048842c37b5)
 
 #### 關視窗
 
@@ -216,7 +218,10 @@ method : you just download the latest driver from seleniun
 
 link: https://googlechromelabs.github.io/chrome-for-testing/
 
-附上demo影片:
+## 附上demo影片:
+
+
+https://github.com/Estherchao-tw/python_-/assets/74496288/e951072c-6536-4eb0-a734-545b5d06b024
 
 
 
@@ -224,4 +229,4 @@ link: https://googlechromelabs.github.io/chrome-for-testing/
 
 you can check  facebook-scraper file, there is an .zip that contain all pictures from this program.
 
-you can check the program from here : 
+you can check the program from here : https://github.com/Estherchao-tw/python_-/edit/main/%E7%88%AC%E8%9F%B2/facebook-scaper/FacebookDataScraper.py
