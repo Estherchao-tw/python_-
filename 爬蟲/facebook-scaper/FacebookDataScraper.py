@@ -1,5 +1,5 @@
 ##
-## 爬取臉書社團，在社團內部自動垂直瀏覽頁面，瀏覽頁面才能再入資料，爬取貼文，並計算貼文數量
+## 爬取臉書社團，在社團內部自動垂直瀏覽頁面，瀏覽頁面才能再入資料，爬取貼文，並把照片下載下來
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service #執行自動化測試或爬蟲任務，因為它可以模擬用戶的操作，同時可以訪問網頁上的信息。
